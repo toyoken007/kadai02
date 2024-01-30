@@ -23,7 +23,7 @@
     "npm": "^10.2.4",
     "sass": "^1.69.5"
   },
-  "name": "gulp_scss",
+  "name": "kadai02",
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
@@ -240,5 +240,5 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "ブランチをhtmlブランチでマージし新ブランチで作業"
 }
