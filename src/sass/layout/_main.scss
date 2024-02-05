@@ -1,0 +1,21 @@
+@use "./variables" as var;
+
+//ファーストビュー
+.fv_box {
+    .fv_img1 {
+        background-image: url(../../assets/common/images/fv-bgi_01@2x.jpg);
+        width: 100%;
+        height: 100vh;
+    }
+    .fv_img2 {
+        background-image: url(../../assets/common/images/fv-bgi_02@2x.jpg);
+        width: 100%;
+        height: 100vh;
+    }
+    .fv_img3 {
+        background-image: url(../../assets/common/images/fv-bgi_03@2x.jpg);
+        width: 100%;
+        height: 100vh;
+    }
+
+}
