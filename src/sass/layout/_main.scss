@@ -1,21 +1,55 @@
 @use "./variables" as var;
 
 //ファーストビュー
-.fv_box {
-    .fv_img1 {
-        background-image: url(../../assets/common/images/fv-bgi_01@2x.jpg);
-        width: 100%;
-        height: 100vh;
+.fv_wrap {
+    position: relative;
+
+    .fv_box {
+        .fv_img1 {
+            background-image: url(../../assets/common/images/fv-bgi_01@2x.jpg);
+            width: 100%;
+            height: 100vh;
+        }
+
+        .fv_img2 {
+            background-image: url(../../assets/common/images/fv-bgi_02@2x.jpg);
+            width: 100%;
+            height: 100vh;
+        }
+
+        .fv_img3 {
+            background-image: url(../../assets/common/images/fv-bgi_03@2x.jpg);
+            width: 100%;
+            height: 100vh;
+        }
+
     }
-    .fv_img2 {
-        background-image: url(../../assets/common/images/fv-bgi_02@2x.jpg);
-        width: 100%;
-        height: 100vh;
-    }
-    .fv_img3 {
-        background-image: url(../../assets/common/images/fv-bgi_03@2x.jpg);
-        width: 100%;
-        height: 100vh;
+
+    .h2_wrap {
+        position: relative;
+        .h2_box {
+            position: absolute;
+            content: "";
+            left: 120px;
+            bottom: 172px;
+            z-index: 2;
+            color: var.$color-white;
+
+            h2 {
+                font-size: 70px;
+                font-weight: bold;
+                letter-spacing: 0.5px;
+                font-family: var.$main-font;
+                margin-bottom: 23px;
+            }
+
+            .h2_sub {
+                font-size: 40px;
+                font-weight: bold;
+                letter-spacing: 0.5px;
+                font-family: var.$mainjp-font;
+            }
+        }
     }
 
 }
