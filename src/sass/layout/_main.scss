@@ -5,24 +5,29 @@
 	position: relative;
 
 	.fv_box {
-		.fv_img1 {
-			background-image: url(../../assets/common/images/fv-bgi_01@2x.jpg);
+		.fv_img {
 			width: 100%;
 			height: 100vh;
+			
+			[class^="fv_bg_img"]{
+				width: 100%;
+				height: 100vh;
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+			}
+			.fv_bg_img1 {
+				background-image: url(../../assets/common/images/fv-bgi_01@2x.jpg);
+			}
+	
+			.fv_bg_img2 {
+				background-image: url(../../assets/common/images/fv-bgi_02@2x.jpg);
+			}
+	
+			.fv_bg_img3 {
+				background-image: url(../../assets/common/images/fv-bgi_03@2x.jpg);
+			}
 		}
-
-		.fv_img2 {
-			background-image: url(../../assets/common/images/fv-bgi_02@2x.jpg);
-			width: 100%;
-			height: 100vh;
-		}
-
-		.fv_img3 {
-			background-image: url(../../assets/common/images/fv-bgi_03@2x.jpg);
-			width: 100%;
-			height: 100vh;
-		}
-
 	}
 
 	.h2_wrap {
@@ -44,11 +49,12 @@
 				margin-bottom: 23px;
 			}
 
-			.h2_sub {
+			p.h2_sub {
 				font-size: 40px;
 				font-weight: bold;
 				letter-spacing: 0.5px;
-				font-family: var.$mainjp-font;
+				font-family: 'Noto Serif JP';
+				text-align: center;
 			}
 		}
 	}
@@ -93,7 +99,7 @@
 			font-size: 30px;
 			font-family: var.$mainjp-font;
 			letter-spacing: 0.5px;
-			line-height: 50px;
+			line-height: 2;
 		}
 
 		figure {
@@ -102,12 +108,13 @@
 			justify-content: space-between;
 
 			figcaption {
-				width: 400px;
+				width: 440px;
 				font-size: 16px;
 				display: flex;
 				align-items: center;
 				font-family: var.$mainjp-font;
-				letter-spacing: -3px;
+				letter-spacing: 0.5px;
+				line-height: 2;
 			}
 		}
 	}
