@@ -8,22 +8,23 @@
 		.fv_img {
 			width: 100%;
 			height: 100vh;
-			
-			[class^="fv_bg_img"]{
+
+			[class^="fv_bg_img"] {
 				width: 100%;
 				height: 100vh;
 				background-size: cover;
 				background-position: center;
 				background-repeat: no-repeat;
 			}
+
 			.fv_bg_img1 {
 				background-image: url(../../assets/common/images/fv-bgi_01@2x.jpg);
 			}
-	
+
 			.fv_bg_img2 {
 				background-image: url(../../assets/common/images/fv-bgi_02@2x.jpg);
 			}
-	
+
 			.fv_bg_img3 {
 				background-image: url(../../assets/common/images/fv-bgi_03@2x.jpg);
 			}
@@ -64,69 +65,164 @@
 //CONCEPT
 .concept {
 	width: 100%;
-	margin-top: 100px;
-	margin-left: 220px;
-	max-width: 1100px;
-	position: relative;
+	max-width: 1200px;
+	margin: 100px auto 0;
 
-	.concept_box {
-		max-width: 1000px;
+	.concept_wrap {
+		width: 100%;
+		max-width: 1100px;
 		margin: 0 auto;
-		height: 739px;
 
-		h2 {
-			font-size: 60px;
-			font-family: var.$main-font;
-			font-style: italic;
-			position: relative;
+		.concept_box {
+			max-width: 1000px;
+			margin: 0 auto;
 
-			&::after {
-				position: absolute;
-				content: "";
-				top: 50%;
-				left: 331px;
-				width: 200px;
-				display: block;
-				height: 5px;
-				background: black;
+			h2 {
+				font-size: 60px;
+				font-family: var.$main-font;
+				font-style: italic;
+				position: relative;
+				letter-spacing: 0.5px;
+
+				&::after {
+					position: absolute;
+					content: "";
+					top: 50%;
+					left: 331px;
+					width: 200px;
+					display: block;
+					height: 5px;
+					background: black;
+				}
 			}
-		}
 
-		h3 {
-			max-width: 600px;
-			margin: 70px auto 0;
-			text-align: center;
-			font-size: 30px;
-			font-family: var.$mainjp-font;
-			letter-spacing: 0.5px;
-			line-height: 2;
-		}
-
-		figure {
-			display: flex;
-			margin-top: 60px;
-			justify-content: space-between;
-
-			figcaption {
-				width: 440px;
-				font-size: 16px;
-				display: flex;
-				align-items: center;
+			h3 {
+				max-width: 600px;
+				margin: 70px auto 0;
+				text-align: center;
+				font-size: 30px;
 				font-family: var.$mainjp-font;
 				letter-spacing: 0.5px;
 				line-height: 2;
 			}
+
+			figure {
+				display: flex;
+				margin-top: 60px;
+				justify-content: space-between;
+
+				figcaption {
+					width: 440px;
+					font-size: 16px;
+					display: flex;
+					align-items: center;
+					font-family: var.$mainjp-font;
+					letter-spacing: 0.5px;
+					line-height: 2;
+				}
+			}
 		}
 	}
+
 	.concept_h4 {
+		margin-top: 70px;
+		text-align: right;
 		font-size: 90px;
 		font-weight: bold;
 		font-family: var.$main-font;
-		position: absolute;
-		content: "";
-		bottom: 0;
-		left: 485px;
 		color: var.$sub-color;
 		opacity: 0.05;
+	}
+}
+
+//WORKS
+.works {
+	margin-top: 70px;
+	width: 100%;
+	height: 986px;
+	background-image: url(../../assets/common/images/works-bgi@2x.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	.works_box {
+		width: 100%;
+		max-width: 1200px;
+		margin: 0 auto;
+		padding-top: 104px;
+		h2 {
+			margin-right: 250px;
+			text-align: right;
+			font-size: 60px;
+			font-family: var.$main-font;
+			font-style: italic;
+			position: relative;
+			letter-spacing: 0.5px;
+			color: var.$color-white;
+	
+			&::after {
+				position: absolute;
+				content: "";
+				top: 50%;
+				left: 1000px;
+				width: 200px;
+				display: block;
+				height: 5px;
+				background: var.$color-white;
+			}
+		}
+		.works_img_wrap {
+			display: flex;
+			margin: 80px auto 0;
+			width: 1000px;
+			column-gap: 20px;
+			figure {
+				width: 320px;
+				height: 334px;
+				display: flex;
+				flex-direction: column;
+				background: var.$color-white;
+				box-shadow: 0 0 6px #1B1310;
+				img {
+					width: 100%;
+				}
+				figcaption {
+					width: 280px;
+					height: 184px;
+					font-family: var.$mainjp-font;
+					display: flex;
+					margin: 0 auto;
+					align-items: center;
+					font-size: 16px;
+					line-height: 2;
+				}
+			}
+		}
+	}
+	.works_link_box {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 80px;
+		a {
+			padding: 19px 71px 18px;
+			display: block;
+			background: #F7D43F;
+			border-radius: 30px;
+			font-size: 16px;
+			font-family: var.$main-font;
+			font-weight: bold;
+			color: var.$sub-color;
+			text-decoration: none;
+			box-shadow: 0 0 6px #1B1310;
+		}
+	}
+	.works_h4 {
+		margin-top: 70px;
+		text-align: left;
+		font-size: 90px;
+		font-weight: bold;
+		font-family: var.$main-font;
+		color: var.$color-white;
+		opacity: 0.1;
 	}
 }
