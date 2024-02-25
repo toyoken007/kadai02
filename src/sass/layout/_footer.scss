@@ -1,0 +1,11 @@
+@use "./variables" as var;
+
+footer {
+    margin: 30px 0;
+    p {
+        letter-spacing: 0.5px;
+        font-family: var.$main-font;
+        text-align: center;
+        font-size: 14px;
+    }
+}
