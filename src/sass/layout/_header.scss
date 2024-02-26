@@ -4,6 +4,9 @@ header {
     display: flex;
     justify-content: center;
     z-index: 99999;
+    width: 100%;
+    position: fixed;
+
     .header_box {
         font-family: var.$main-font;
         display: flex;
@@ -12,27 +15,45 @@ header {
         align-items: center;
         justify-content: space-between;
         margin: 19px auto 0;
-        position: fixed;
         color: var.$color-white;
+
         h1 {
             font-size: 26px;
             width: 198px;
             letter-spacing: 0.5px;
         }
+
         nav ul {
             display: flex;
             width: 349px;
             justify-content: space-between;
             column-gap: 30px;
+
             li {
-                
+
                 font-size: 16px;
                 list-style: none;
+
                 a {
                     color: var.$color-white;
                     text-decoration: none;
                 }
             }
         }
+    }
+
+    //ヘッダー変化
+    .change-color {
+        background-color: #282F35;
+        transition: .3s;
+        height: 96px;
+        font-family: var.$main-font;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        column-gap: 653px;
+        margin-top: 0;
+        color: var.$color-white;
     }
 }
