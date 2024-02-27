@@ -38,6 +38,16 @@ $(function () {
   });
 });
 
+$(function () {
+  const ham = $('#js-hamburger');
+  const nav = $('#js_nav');
+  ham.on('click', function () { //ハンバーガーメニューをクリックしたら
+      ham.toggleClass('active'); // ハンバーガーメニューにactiveクラスを付け外し
+      nav.toggleClass('active'); // ナビゲーションメニューにactiveクラスを付け外
+      $('body').toggleClass('scroll_non')
+  });
+});
+
 //----------------------------------------------------------------------
 //  javascript 関数
 //----------------------------------------------------------------------
