@@ -1,25 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>課題02</title>
   <link rel="stylesheet" href="./css/slick/slick.css">
   <link rel="stylesheet" href="./css/slick/slick-theme.css">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
   <script src="./js/jquery/jquery.min.js"></script>
+  <script src="./js/jquery/slick/slick.min.js"></script>
   <script src="./js/main.js" type="module" defer></script>
 </head>
 <body>
-  <div class="content">
-    <p class="def">こんばんわ。こんにちは</p>
-  </div>
-  <h1 class="abc" id="id">こんにちは、そろそろ寝る時間です。おやすみなさい。</h1>
-  <h1 class="abc" id="id">cccca</h1>
-  <div class="gridwrap">
-    <div class="item01"></div>
-    <div class="item01"></div>
-    <div class="item01"></div>
-  </div>
+  header
+    .header_box
+      h1 Cresta Design
+      nav.header_nav#js_nav
+        ul.nav_ul
+          li 
+            a(href="") Concept
+          li 
+            a(href="") Service
+          li 
+            a(href="") Works
+          li 
+            a(href="about/index.html") Contact
+      button.openbtn#js-hamburger
+        span 
+        span 
+        span
+
+  main.contact 
+    .con_fv 
+      h2 Contact
+      .con_fv_h4 CONTACT US
+
+    section.form 
+      .form_wrap 
+        form(action="") 
+          .toi_wrap
+            p お問い合わせ内容
+            .toi_box 
+              .toi 
+                input(class="toi" type="checkbox" name="" id="toi1")
+                label(for="toi1") 資料請求
+              .toi 
+                input(class="toi" type="checkbox" name="" id="toi2")
+                label(for="toi2") お電話でのご相談希望
+              .toi
+                input(class="toi" type="checkbox" name="" id="toi3")
+                label(for="toi3") 申し込み
+
+          .form_box 
+            label(for="")
+              p 担当者名
+              input(type="text" name="")
+            label(for="")
+              p 電話番号
+              input(type="tell" name="")
+            label(for="")
+              p メールアドレス
+              input(type="addoress" name="")
+            label(for="")
+              p その他
+              textarea(name="", class="sonota") 
+          
+          .submit
+            a(href="") Submit
+
+  footer 
+      p &copy;cresta.design all rights reserved
+                
+            //- <input  class="visually-hidden" type="radio" name="fruits" id="apple"  />
+            //- <label for="apple">りんご</label>
+            //- <input class="visually-hidden" type="radio" name="fruits" id="orange"/>
+            //- <label for="orange">みかん</label>
+            //- <input class="visually-hidden" type="radio" name="fruits" id="peach" />
+            //- <label for="peach">もも</label>
+             
 </body>
 </html>
