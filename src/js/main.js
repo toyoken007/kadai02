@@ -28,12 +28,10 @@ $(function () {
 
 $(function () {
   $(window).on('scroll', function () {
-    if ($('.fv_wrap').height() < $(this).scrollTop()) {
+    if ($('.fv_wrap').height() - 10 < $(this).scrollTop()) {
       $('.header_box').addClass('change-color');
-      console.log("aaaaaa");
     } else {
       $('.header_box').removeClass('change-color');
-      console.log("bbbbbbb");
     }
   });
 });
@@ -41,12 +39,19 @@ $(function () {
 $(function () {
   const ham = $('#js-hamburger');
   const nav = $('#js_nav');
+  const li = $(".nav_ul li");
+
+
   ham.on('click', function () { //ハンバーガーメニューをクリックしたら
-      ham.toggleClass('active'); // ハンバーガーメニューにactiveクラスを付け外し
-      nav.toggleClass('active'); // ナビゲーションメニューにactiveクラスを付け外
-      $('body').toggleClass('scroll_non')
+    ham.toggleClass('active'); // ハンバーガーメニューにactiveクラスを付け外し
+    nav.toggleClass('active'); // ナビゲーションメニューにactiveクラスを付け外
+    $('body').toggleClass('scroll_non')
+  });
+  li.on('click', function () { //ハンバーガーメニューをクリックしたら
+    nav.toggleClass('active'); // ナビゲーションメニューにactiveクラスを付け外
   });
 });
+
 
 //----------------------------------------------------------------------
 //  javascript 関数

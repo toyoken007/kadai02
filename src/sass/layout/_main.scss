@@ -1,10 +1,11 @@
 @use "./variables" as var;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:wght@500&family=Zen+Maru+Gothic&display=swap');
 
-@media screen and (max-width:768px) {
-	main {
-		width: 768px;
-	}
-}
+// @media screen and (max-width:768px) {
+// 	main {
+// 		width: 768px;
+// 	}
+// }
 
 //ファーストビュー
 .fv_wrap {
@@ -14,6 +15,7 @@
 		.fv_img {
 			width: 100%;
 			height: 100vh;
+			display: none;
 
 			[class^="fv_bg_img"] {
 				width: 100%;
@@ -35,45 +37,17 @@
 				background-image: url(../../assets/common/images/fv-bgi_03@2x.jpg);
 			}
 
-			@media screen and (max-width:768px) {
-				// display: none;
-			}
+			
 		}
-
-		// @media screen and (max-width:768px) {
-		// 	.fv_sp_img_wrap {
-		// 		width: 100%;
-		// 		height: 100vh;
-		// .fv_sp_img {
-		// 	background-image: url(../../assets/common/images/);
-		// }
-
-		// 		[class^="fv_bg_img"] {
-		// 			width: 100%;
-		// 			height: 100vh;
-		// 			background-size: cover;
-		// 			background-position: center;
-		// 			background-repeat: no-repeat;
-		// 		}
-
-		// 		.fv_bg_img1 {
-		// 			background-image: url(../../assets/common/images/fv-bgi_01@2x.jpg);
-		// 		}
-
-		// 		.fv_bg_img2 {
-		// 			background-image: url(../../assets/common/images/fv-bgi_02@2x.jpg);
-		// 		}
-
-		// 		.fv_bg_img3 {
-		// 			background-image: url(../../assets/common/images/fv-bgi_03@2x.jpg);
-		// 		}
-		// 	}
-
-		// }
+		.slick-initialized {
+			display: block !important;
+			/*slick-initializedが付与されたら表示*/
+		}
 	}
 
 	.h2_wrap {
 		position: relative;
+
 		@media screen and (max-width:768px) {
 			position: absolute;
 			content: "";
@@ -89,6 +63,7 @@
 			bottom: 172px;
 			z-index: 2;
 			color: var.$color-white;
+
 			@media screen and (max-width:768px) {
 				position: static;
 			}
@@ -99,8 +74,11 @@
 				letter-spacing: 0.5px;
 				font-family: var.$main-font;
 				margin-bottom: 23px;
+
 				@media screen and (max-width:768px) {
 					font-size: 37px;
+					width: 348px;
+					text-align: center;
 				}
 			}
 
@@ -110,6 +88,7 @@
 				letter-spacing: 0.5px;
 				font-family: 'Noto Serif JP';
 				text-align: center;
+
 				@media screen and (max-width:768px) {
 					font-size: 30px;
 					width: 244px;
@@ -129,35 +108,26 @@
 .concept {
 	width: 100%;
 	max-width: 1200px;
-	margin: 100px auto 0;
+	margin: 0 auto;
+	padding-top: 100px;
 
 	@media screen and (max-width:768px) {
-		// display: none;
 		width: 100%;
 		max-width: 345px;
-		margin: 100px auto 0;
 	}
 
 	.concept_wrap {
 		width: 100%;
 		max-width: 1100px;
 		margin: 0 auto;
+
 		@media screen and (max-width:768px) {
-			// display: none;
 			width: 100%;
-			// max-width: 345px;
-			margin: 100px auto 0;
 		}
 
 		.concept_box {
 			max-width: 1000px;
 			margin: 0 auto;
-			@media screen and (max-width:768px) {
-				// display: none;
-				// width: 100%;
-				// max-width: 345px;
-				// margin: 100px auto 0;
-			}
 
 			h2 {
 				font-size: 60px;
@@ -175,11 +145,13 @@
 					display: block;
 					height: 5px;
 					background: black;
+
 					@media screen and (max-width:768px) {
 						width: 90px;
 						left: 187px;
 					}
 				}
+
 				@media screen and (max-width:768px) {
 					font-size: 30px;
 				}
@@ -193,9 +165,11 @@
 				font-family: var.$mainjp-font;
 				letter-spacing: 0.5px;
 				line-height: 2;
+
 				@media screen and (max-width:768px) {
 					font-size: 20px;
 					margin-top: 51px;
+
 					br {
 						display: none;
 					}
@@ -206,6 +180,7 @@
 				display: flex;
 				margin-top: 60px;
 				justify-content: space-between;
+
 				@media screen and (max-width:768px) {
 					flex-direction: column;
 					row-gap: 30px;
@@ -220,6 +195,7 @@
 					font-family: var.$mainjp-font;
 					letter-spacing: 0.5px;
 					line-height: 2;
+
 					@media screen and (max-width:768px) {
 						width: 345px;
 						height: 204px;
@@ -237,6 +213,7 @@
 		font-family: var.$main-font;
 		color: var.$sub-color;
 		opacity: 0.05;
+
 		@media screen and (max-width:768px) {
 			font-size: 40px;
 			margin-top: 40px;
@@ -253,6 +230,7 @@
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+
 	@media screen and (max-width:768px) {
 		height: auto;
 	}
@@ -262,6 +240,7 @@
 		max-width: 1200px;
 		margin: 0 auto;
 		padding-top: 104px;
+
 		@media screen and (max-width:768px) {
 			width: 346px;
 		}
@@ -275,6 +254,7 @@
 			position: relative;
 			letter-spacing: 0.5px;
 			color: var.$color-white;
+
 			@media screen and (max-width:768px) {
 				font-size: 30px;
 				width: 346px;
@@ -290,6 +270,7 @@
 				display: block;
 				height: 5px;
 				background: var.$color-white;
+
 				@media screen and (max-width:768px) {
 					width: 100px;
 					left: 246px;
@@ -302,6 +283,7 @@
 			margin: 80px auto 0;
 			width: 1000px;
 			column-gap: 20px;
+
 			@media screen and (max-width:768px) {
 				width: 0;
 				flex-direction: column;
@@ -363,6 +345,7 @@
 		font-family: var.$main-font;
 		color: var.$color-white;
 		opacity: 0.1;
+
 		@media screen and (max-width:768px) {
 			font-size: 40px;
 			padding: 40px 0;
@@ -374,15 +357,13 @@
 //service
 .service {
 	width: 100%;
-	margin-top: 100px;
-	@media screen and (max-width:768px) {
-		// display: none;
-	}
+	padding-top: 100px;
 
 	.service_h2 {
 		width: 100%;
 		max-width: 1000px;
 		margin: 0 auto;
+
 		@media screen and (max-width:768px) {
 			width: 346px;
 		}
@@ -395,6 +376,7 @@
 			font-style: italic;
 			position: relative;
 			letter-spacing: 0.5px;
+
 			@media screen and (max-width:768px) {
 				font-size: 30px;
 			}
@@ -408,6 +390,7 @@
 				display: block;
 				height: 5px;
 				background: black;
+
 				@media screen and (max-width:768px) {
 					width: 100px;
 					left: 158px;
@@ -419,6 +402,7 @@
 	.service_box {
 		display: flex;
 		margin-top: 80px;
+
 		@media screen and (max-width:768px) {
 			flex-direction: column;
 			align-items: center;
@@ -429,6 +413,7 @@
 			position: relative;
 			width: 33.333333333%;
 			height: calc(320 / 1440 * 100vw);
+
 			@media screen and (max-width:768px) {
 				width: 100%;
 				height: 100%
@@ -477,6 +462,7 @@
 					font-style: italic;
 					font-family: var.$main-font;
 					z-index: 5;
+
 					@media screen and (max-width:768px) {
 						font-size: 20px;
 					}
@@ -506,6 +492,7 @@
 				font-size: 40px;
 				font-style: italic;
 				font-family: var.$main-font;
+
 				@media screen and (max-width:768px) {
 					font-size: 20px;
 				}
@@ -531,6 +518,7 @@
 				font-size: 40px;
 				font-style: italic;
 				font-family: var.$main-font;
+
 				@media screen and (max-width:768px) {
 					font-size: 20px;
 				}
@@ -542,6 +530,7 @@
 		width: 1200px;
 		max-width: 100%;
 		margin: 70px auto 0;
+
 		@media screen and (max-width:768px) {
 			width: 346px;
 			margin-top: 40px;
@@ -554,6 +543,7 @@
 			font-family: var.$main-font;
 			color: var.$sub-color;
 			opacity: 0.05;
+
 			@media screen and (max-width:768px) {
 				font-size: 40px;
 			}
@@ -570,6 +560,7 @@
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+
 	@media screen and (max-width:768px) {
 		height: auto;
 	}
@@ -579,6 +570,7 @@
 		max-width: 1200px;
 		margin: 0 auto;
 		padding-top: 104px;
+
 		@media screen and (max-width:768px) {
 			width: 346px;
 		}
@@ -592,6 +584,7 @@
 			position: relative;
 			letter-spacing: 0.5px;
 			color: var.$color-white;
+
 			@media screen and (max-width:768px) {
 				font-size: 30px;
 				width: 100%;
@@ -608,6 +601,7 @@
 				display: block;
 				height: 5px;
 				background: var.$color-white;
+
 				@media screen and (max-width:768px) {
 					left: 246px;
 					width: 100px;
@@ -626,6 +620,7 @@
 				p {
 					color: var.$color-white;
 					font-size: 20px;
+					font-family: var.$mainjp-font;
 				}
 			}
 
@@ -634,6 +629,7 @@
 				justify-content: center;
 				align-items: center;
 				margin-top: 40px;
+
 				@media screen and (max-width:768px) {
 					margin-top: 30px;
 				}
@@ -664,6 +660,7 @@
 		font-family: var.$main-font;
 		color: var.$color-white;
 		opacity: 0.1;
+
 		@media screen and (max-width:768px) {
 			font-size: 40px;
 			padding: 40px 0;

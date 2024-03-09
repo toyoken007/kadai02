@@ -1,11 +1,14 @@
 @use "./variables" as var;
 
 footer {
-    margin: 30px 0;
+    padding: 30px 0;
     p {
         letter-spacing: 0.5px;
         font-family: var.$main-font;
         text-align: center;
         font-size: 14px;
+        @media screen and (max-width:768px) {
+            font-size: calc(14 / 375 * 100vw);
+        }
     }
 }
