@@ -33,6 +33,11 @@ header {
             font-size: 26px;
             width: 198px;
             letter-spacing: 0.5px;
+
+            a {
+                color: var.$color-white;
+                text-decoration: none;
+            }
         }
 
         nav ul {
