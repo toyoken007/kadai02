@@ -2,7 +2,7 @@
 
 
 
-.contact {
+.contact_pg {
 	@media screen and (max-width:768px) {
 		main {
 			width: 768px;
@@ -58,8 +58,10 @@
 				width: calc(345 / 375 * 100vw);
 			}
 			p {
-				// font-size: 16px;
-				font-size: calc(16 / 375 * 100vw);;
+				font-size: 16px;
+				@media screen and (max-width:768px) {
+					font-size: calc(16 / 375 * 100vw);
+				}
 			}
 			.toi_box {
 				display: flex;
@@ -89,8 +91,10 @@
 			label {
 				
 				p {
-					// font-size: 16px;
-					font-size: calc(16 / 375 * 100vw);
+					font-size: 16px;
+					@media screen and (max-width:768px) {
+						font-size: calc(16 / 375 * 100vw);
+					}
 				}
 				input {
 					width: 700px;
@@ -121,16 +125,16 @@
 			}
 
 			a {
-				// padding: 19px 84px 18px;
-				padding-top: calc(19 / 375 * 100vw);
-				padding-bottom: calc(18 / 375 * 100vw);
-				padding-left: calc(84 / 375 * 100vw);
-				padding-right: calc(84 / 375 * 100vw);
+				padding: 19px 84px 18px;
+				// padding-top: calc(19 / 375 * 100vw);
+				// padding-bottom: calc(18 / 375 * 100vw);
+				// padding-left: calc(84 / 375 * 100vw);
+				// padding-right: calc(84 / 375 * 100vw);
 				display: block;
 				background: #F7D43F;
 				border-radius: 60px;
-				// font-size: 16px;
-				font-size: calc(16 / 375 * 100vw);
+				font-size: 16px;
+				// font-size: calc(16 / 375 * 100vw);
 				font-family: var.$main-font;
 				font-weight: bold;
 				color: var.$sub-color;
