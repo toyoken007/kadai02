@@ -33,6 +33,12 @@ header {
             font-size: 26px;
             width: 198px;
             letter-spacing: 0.5px;
+            @media screen and (max-width:768px) {
+                // font-size: calc(26 / 375 * 100vw);
+                font-size: 26px;
+                // width: calc(198 / 375 * 100vw);
+                width: 198px;
+            }
 
             a {
                 color: var.$color-white;
@@ -68,23 +74,27 @@ header {
                 display: flex;
                 position: relative;
                 row-gap: 4px;
+                // row-gap: calc(4 / 375 * 100vw);
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
                 position: relative;
                 cursor: pointer;
                 width: 40px;
+                // width: calc(40 / 375 * 100vw);
                 height: 40px;
+                // height: calc(40 / 375 * 100vw);
                 border-radius: 5px;
                 border: 0;
                 background-color: transparent;
                 z-index: 9999;
+
             }
 
             .openbtn span {
                 display: inline-block;
                 transition: all .4s;
-                left: 14px;
+                // left: 14px;
                 height: 2px;
                 border-radius: 5px;
                 background: var.$color-white;
@@ -150,8 +160,10 @@ header {
                     width: auto;
                     margin: 20%;
                     padding: 0;
-                    font-size: 2em;
                     text-align: center;
+                    li {
+                        font-size: calc(16 / 375 * 100vw);
+                    }
                 }
             }
 

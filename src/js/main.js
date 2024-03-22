@@ -45,10 +45,16 @@ $(function () {
   ham.on('click', function () { //ハンバーガーメニューをクリックしたら
     ham.toggleClass('active'); // ハンバーガーメニューにactiveクラスを付け外し
     nav.toggleClass('active'); // ナビゲーションメニューにactiveクラスを付け外
-    $('body').toggleClass('scroll_non')
+    if (ham.hasClass('active') && nav.hasClass('active')) {
+      $('body').addClass('scroll_non')
+    } else {
+      $('body').removeClass('scroll_non')
+    }
   });
   li.on('click', function () { //ハンバーガーメニューをクリックしたら
+    ham.toggleClass('active'); // ハンバーガーメニューにactiveクラスを付け外し
     nav.toggleClass('active'); // ナビゲーションメニューにactiveクラスを付け外
+    $('body').toggleClass('scroll_non')
   });
 });
 
